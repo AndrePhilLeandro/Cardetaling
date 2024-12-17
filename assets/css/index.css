@@ -1,0 +1,63 @@
+
+.bd{
+    background-color: black;
+    color: #c79437;
+    height:100% ;
+    width:100% ;
+}
+.footer{
+    background-color: black;
+    color: #c79437;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #c79437;
+    
+}
+.imglogo{
+    height: 200px ;
+    width: 200  px ;
+}
+.data{
+    text-align: center;
+}
+.sb{
+    padding-right: 10px;
+}
+.sobre{
+ display: flex;
+ justify-content: right;
+ font-size: 25px;
+}
+.div1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;  
+}
+.borda {
+    border: 2px solid #c79437; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: auto;
+    
+}
+
+.btn-group{
+    background-color: #c79437;
+    color: black;
+}
+.dropdown-item{
+    background-color: black;
+    color: #c79437;
+}
+.slogan{
+    text-align: center;
+    font-size: 35px;
+}
