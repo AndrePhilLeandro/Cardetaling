@@ -19,7 +19,10 @@ a{
 }
 .imglogo{
     height: 200px ;
-    width: 200  px ;
+    width: 200 px ;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .data{
     text-align: center;
@@ -37,6 +40,7 @@ a{
     justify-content: center; 
     align-items: center;     
     height: 100%;  
+    padding-top: 100px;
 }
 .borda {
     border: 2px solid #c79437; 
@@ -60,4 +64,49 @@ a{
 .slogan{
     text-align: center;
     font-size: 35px;
+}
+/* dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #c79437;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    background-color: #c79437;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
 }
