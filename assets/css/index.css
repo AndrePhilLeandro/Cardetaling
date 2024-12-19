@@ -1,72 +1,80 @@
-
-.bd{
+.bd {
     background-color: black;
     color: #c79437;
-    height:100% ;
-    width:100% ;
+    height: 100%;
+    width: 100%;
 }
-.footer{
+
+.footer {
     background-color: black;
     color: #c79437;
     height: 100%;
     width: 100%;
     display: block;
 }
-a{
+
+a {
     text-decoration: none;
     color: #c79437;
-    
 }
-.imglogo{
-    height: 200px ;
-    width: 200 px ;
+
+.imglogo {
+    height: 200px;
+    width: 200px;
     position: absolute;
     top: 0;
     left: 0;
+    object-fit: cover; /* Evita distorção ao redimensionar */
 }
-.data{
+
+.data {
     text-align: center;
 }
-.sb{
+
+.sb {
     padding-right: 10px;
 }
-.sobre{
- display: flex;
- justify-content: right;
- font-size: 25px;
-}
-.div1{
+
+.sobre {
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100%;  
+    justify-content: flex-start; /* Corrigido para alinhar à esquerda */
+    font-size: 25px;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     padding-top: 100px;
 }
+
 .borda {
-    border: 2px solid #c79437; 
+    border: 2px solid #c79437;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 600px;
     height: auto;
-    
 }
 
-.btn-group{
+.btn-group {
     background-color: #c79437;
     color: black;
 }
-.dropdown-item{
+
+.dropdown-item {
     background-color: black;
     color: #c79437;
 }
-.slogan{
+
+.slogan {
     text-align: center;
     font-size: 35px;
 }
-/* dropdown */
 
+/* dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -109,4 +117,121 @@ a{
 
 .dropdown.show .dropdown-content {
     display: block;
+}
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: #c79437;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imglogo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.slogan {
+    font-style: italic;
+}
+
+/* Estilos da nav bar */
+.navbar {
+    width: 100%;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: black;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .imglogo {
+        width: 120px;
+        height: auto;
+    }
+
+    .slogan {
+        font-size: 25px;
+    }
+
+    .borda {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .dropdown-button {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+    .imglogo {
+        width: 100px;
+        height: auto;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
