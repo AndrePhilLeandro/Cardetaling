@@ -56,7 +56,7 @@ if(!nome|| !telefone){
     return;
 }
 
-let mensagem = `Olá, meu nome é ${nome}\n Data e hora de Agendamento: ${data} às ${hora}Hrs. \nServiços:\n`;
+let mensagem = `Olá, meu nome é ${nome}\nAgendamento: ${data} \nHora:${hora}Hrs. \nServiços:\n`;
     if (polimento) mensagem += "- Polimento\n";
     if (cristalizacao) mensagem += "- Cristalização\n";
     if (higienizacao_interna) mensagem += "- Higienização Interna\n";
