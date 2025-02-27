@@ -39,6 +39,7 @@ a {
     display: flex;
     justify-content: flex-start; /* Corrigido para alinhar à esquerda */
     font-size: 25px;
+    display: none;
 }
 
 .div1 {
